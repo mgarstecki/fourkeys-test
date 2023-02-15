@@ -12,6 +12,6 @@ jobs:
     name: 'Terraform'
     runs-on: ubuntu-latest
     environment: production
-  steps:
-  - name: Fake deploy
-    run: echo "ran fake deploy"
+    steps:
+    - name: Fake deploy
+      run: echo "ran fake deploy"
