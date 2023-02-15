@@ -1,0 +1,17 @@
+name: 'Fake deploy'
+
+on:
+  push:
+    branches: [ 'main' ]
+
+permissions:
+  contents: read
+
+jobs:
+  terraform:
+    name: 'Terraform'
+    runs-on: ubuntu-latest
+    environment: production
+  steps:
+  - name: Fake deploy
+    run: echo "ran fake deploy"
